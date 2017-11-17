@@ -12,7 +12,13 @@ class WBHTabBarController: UITabBarController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    
         
+        for view in self.tabBar.subviews {
+            if view.isKind(of: UIControl.self) {
+                view.removeFromSuperview()
+            }
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
