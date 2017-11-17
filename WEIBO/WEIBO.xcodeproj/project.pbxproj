@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2001BFEBDACF464F0486FEBC /* Pods_WEIBO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F84DD836CABE5681CCAF72 /* Pods_WEIBO.framework */; };
-		46B48E6F1FBED01000046D9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B48E6E1FBED01000046D9C /* AppDelegate.swift */; };
-		46B48E711FBED01000046D9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B48E701FBED01000046D9C /* ViewController.swift */; };
+		4680ADD51FBEDD7800E5B1BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADD11FBEDCA500E5B1BF /* ViewController.swift */; };
+		4680ADD61FBEDD7B00E5B1BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADD01FBEDCA500E5B1BF /* AppDelegate.swift */; };
 		46B48E761FBED01000046D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B48E751FBED01000046D9C /* Assets.xcassets */; };
 		46B48E791FBED01000046D9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B48E771FBED01000046D9C /* LaunchScreen.storyboard */; };
 		46B48E841FBED01100046D9C /* WEIBOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B48E831FBED01100046D9C /* WEIBOUITests.swift */; };
@@ -29,12 +29,12 @@
 /* Begin PBXFileReference section */
 		2F72417234644D6DB779DDA0 /* Pods_WEIBOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WEIBOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F84DD836CABE5681CCAF72 /* Pods_WEIBO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WEIBO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4680ADD01FBEDCA500E5B1BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4680ADD11FBEDCA500E5B1BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4680ADD31FBEDCA500E5B1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B48E6B1FBED01000046D9C /* WEIBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WEIBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		46B48E6E1FBED01000046D9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46B48E701FBED01000046D9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46B48E751FBED01000046D9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46B48E781FBED01000046D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		46B48E7A1FBED01000046D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B48E7F1FBED01000046D9C /* WEIBOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WEIBOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B48E831FBED01100046D9C /* WEIBOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEIBOUITests.swift; sourceTree = "<group>"; };
 		46B48E851FBED01100046D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +75,56 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4680ADCC1FBEDCA500E5B1BF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4680ADCD1FBEDCA500E5B1BF /* Base */,
+				4680ADCE1FBEDCA500E5B1BF /* HTTP */,
+				4680ADCF1FBEDCA500E5B1BF /* Main */,
+				4680ADD21FBEDCA500E5B1BF /* Other */,
+				4680ADD41FBEDCA500E5B1BF /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4680ADCD1FBEDCA500E5B1BF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4680ADCE1FBEDCA500E5B1BF /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		4680ADCF1FBEDCA500E5B1BF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4680ADD01FBEDCA500E5B1BF /* AppDelegate.swift */,
+				4680ADD11FBEDCA500E5B1BF /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4680ADD21FBEDCA500E5B1BF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4680ADD31FBEDCA500E5B1BF /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4680ADD41FBEDCA500E5B1BF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		46B48E621FBED01000046D9C = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +148,9 @@
 		46B48E6D1FBED01000046D9C /* WEIBO */ = {
 			isa = PBXGroup;
 			children = (
-				46B48E6E1FBED01000046D9C /* AppDelegate.swift */,
-				46B48E701FBED01000046D9C /* ViewController.swift */,
+				4680ADCC1FBEDCA500E5B1BF /* Classes */,
 				46B48E751FBED01000046D9C /* Assets.xcassets */,
 				46B48E771FBED01000046D9C /* LaunchScreen.storyboard */,
-				46B48E7A1FBED01000046D9C /* Info.plist */,
 			);
 			path = WEIBO;
 			sourceTree = "<group>";
@@ -326,8 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46B48E711FBED01000046D9C /* ViewController.swift in Sources */,
-				46B48E6F1FBED01000046D9C /* AppDelegate.swift in Sources */,
+				4680ADD61FBEDD7B00E5B1BF /* AppDelegate.swift in Sources */,
+				4680ADD51FBEDD7800E5B1BF /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +523,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42Q4LG7K62;
-				INFOPLIST_FILE = WEIBO/Info.plist;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = WEIBO/Classes/Other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WBH.WEIBO;
@@ -492,7 +541,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42Q4LG7K62;
-				INFOPLIST_FILE = WEIBO/Info.plist;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = WEIBO/Classes/Other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WBH.WEIBO;
