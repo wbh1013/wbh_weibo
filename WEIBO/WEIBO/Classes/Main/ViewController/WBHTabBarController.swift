@@ -12,25 +12,43 @@ class WBHTabBarController: UITabBarController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-    
-        
-        for view in self.tabBar.subviews {
-            if view.isKind(of: UIControl.self) {
-                view.removeFromSuperview()
+//        self.tabBar.isHidden = true
+        print(self.tabBar.subviews)
+        self.tabBar.subviews.forEach { (subview) in
+            if subview is UIControl {
+                subview.removeFromSuperview()
             }
         }
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //添加tabbar
+        let tabbarFrame = self.tabBar.bounds
+        let customTabbar = WBHTabbarView(frame: tabbarFrame)
+        customTabbar.backgroundColor = UIColor.yellow
+        self.tabBar.addSubview(customTabbar)
+        
         self.setTabBar();
     
     }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        self.tabBar.subviews.forEach { (subview) in
+            if subview is UIControl {
+                subview.removeFromSuperview()
+            }
+        }
+    }
     private func setTabBar(){
         //微博
+        
         self.addChildVC(VC: WBHWeiboViewController(), titleString: "微博", normalImageString: "", selelctImageString: "")
         //发现
         self.addChildVC(VC: WBHDiscoverController(), titleString: "发现", normalImageString: "", selelctImageString: "")
+        
     }
 
 //MARK - 添加控制器
