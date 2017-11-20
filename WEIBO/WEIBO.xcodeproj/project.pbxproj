@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2001BFEBDACF464F0486FEBC /* Pods_WEIBO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F84DD836CABE5681CCAF72 /* Pods_WEIBO.framework */; };
-		4680ADD61FBEDD7B00E5B1BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADD01FBEDCA500E5B1BF /* AppDelegate.swift */; };
-		4680ADDA1FBEDE7D00E5B1BF /* wbhNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADD91FBEDE7D00E5B1BF /* wbhNavigationController.swift */; };
-		4680ADDC1FBEDF6400E5B1BF /* WBHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADDB1FBEDF6400E5B1BF /* WBHTabBarController.swift */; };
 		4680ADE31FBEE0B700E5B1BF /* WBHBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADE21FBEE0B700E5B1BF /* WBHBaseController.swift */; };
 		4680ADE51FBEE14500E5B1BF /* WBHDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADE41FBEE14500E5B1BF /* WBHDiscoverController.swift */; };
 		4680ADE71FBEE15300E5B1BF /* WBHMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADE61FBEE15300E5B1BF /* WBHMeController.swift */; };
@@ -19,6 +16,10 @@
 		46B48E761FBED01000046D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B48E751FBED01000046D9C /* Assets.xcassets */; };
 		46B48E791FBED01000046D9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B48E771FBED01000046D9C /* LaunchScreen.storyboard */; };
 		46B48E841FBED01100046D9C /* WEIBOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B48E831FBED01100046D9C /* WEIBOUITests.swift */; };
+		C1435C0D1FC1835100618D51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1435C0A1FC1835100618D51 /* AppDelegate.swift */; };
+		C1435C0E1FC1835100618D51 /* WBHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1435C0B1FC1835100618D51 /* WBHTabBarController.swift */; };
+		C1435C0F1FC1835100618D51 /* wbhNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1435C0C1FC1835100618D51 /* wbhNavigationController.swift */; };
+		C1435C111FC1862A00618D51 /* WBHTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1435C101FC1862A00618D51 /* WBHTabbarView.swift */; };
 		FFC0EEC4E908F35744033C2A /* Pods_WEIBOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F72417234644D6DB779DDA0 /* Pods_WEIBOUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,10 +36,7 @@
 /* Begin PBXFileReference section */
 		2F72417234644D6DB779DDA0 /* Pods_WEIBOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WEIBOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F84DD836CABE5681CCAF72 /* Pods_WEIBO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WEIBO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4680ADD01FBEDCA500E5B1BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4680ADD31FBEDCA500E5B1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4680ADD91FBEDE7D00E5B1BF /* wbhNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wbhNavigationController.swift; sourceTree = "<group>"; };
-		4680ADDB1FBEDF6400E5B1BF /* WBHTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHTabBarController.swift; sourceTree = "<group>"; };
 		4680ADE21FBEE0B700E5B1BF /* WBHBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHBaseController.swift; sourceTree = "<group>"; };
 		4680ADE41FBEE14500E5B1BF /* WBHDiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHDiscoverController.swift; sourceTree = "<group>"; };
 		4680ADE61FBEE15300E5B1BF /* WBHMeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHMeController.swift; sourceTree = "<group>"; };
@@ -51,6 +49,10 @@
 		46B48E831FBED01100046D9C /* WEIBOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WEIBOUITests.swift; sourceTree = "<group>"; };
 		46B48E851FBED01100046D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3ACBE8DABF0D84C6463BAE7 /* Pods-WEIBO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEIBO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WEIBO/Pods-WEIBO.debug.xcconfig"; sourceTree = "<group>"; };
+		C1435C0A1FC1835100618D51 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1435C0B1FC1835100618D51 /* WBHTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBHTabBarController.swift; sourceTree = "<group>"; };
+		C1435C0C1FC1835100618D51 /* wbhNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wbhNavigationController.swift; sourceTree = "<group>"; };
+		C1435C101FC1862A00618D51 /* WBHTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHTabbarView.swift; sourceTree = "<group>"; };
 		E1837FBEB195787095DA1CD7 /* Pods-WEIBOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEIBOUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WEIBOUITests/Pods-WEIBOUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E7EC8C4C9B6B62D8C12E736D /* Pods-WEIBOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEIBOUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WEIBOUITests/Pods-WEIBOUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F22FF2935D4E292B83C0940A /* Pods-WEIBO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEIBO.release.xcconfig"; path = "Pods/Target Support Files/Pods-WEIBO/Pods-WEIBO.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,9 +106,8 @@
 		4680ADCF1FBEDCA500E5B1BF /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				4680ADD01FBEDCA500E5B1BF /* AppDelegate.swift */,
-				4680ADDB1FBEDF6400E5B1BF /* WBHTabBarController.swift */,
-				4680ADD91FBEDE7D00E5B1BF /* wbhNavigationController.swift */,
+				C1435C081FC1832100618D51 /* ViewController */,
+				C1435C091FC1832900618D51 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -205,6 +206,24 @@
 				2F72417234644D6DB779DDA0 /* Pods_WEIBOUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1435C081FC1832100618D51 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C1435C0A1FC1835100618D51 /* AppDelegate.swift */,
+				C1435C0C1FC1835100618D51 /* wbhNavigationController.swift */,
+				C1435C0B1FC1835100618D51 /* WBHTabBarController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C1435C091FC1832900618D51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1435C101FC1862A00618D51 /* WBHTabbarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,13 +428,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4680ADD61FBEDD7B00E5B1BF /* AppDelegate.swift in Sources */,
-				4680ADDA1FBEDE7D00E5B1BF /* wbhNavigationController.swift in Sources */,
+				C1435C0D1FC1835100618D51 /* AppDelegate.swift in Sources */,
+				C1435C111FC1862A00618D51 /* WBHTabbarView.swift in Sources */,
 				4680ADE31FBEE0B700E5B1BF /* WBHBaseController.swift in Sources */,
 				4680ADE51FBEE14500E5B1BF /* WBHDiscoverController.swift in Sources */,
-				4680ADDC1FBEDF6400E5B1BF /* WBHTabBarController.swift in Sources */,
 				4680ADEB1FBEE17300E5B1BF /* WBHWeiboViewController.swift in Sources */,
 				4680ADE71FBEE15300E5B1BF /* WBHMeController.swift in Sources */,
+				C1435C0F1FC1835100618D51 /* wbhNavigationController.swift in Sources */,
+				C1435C0E1FC1835100618D51 /* WBHTabBarController.swift in Sources */,
 				4680ADE91FBEE16100E5B1BF /* WBHMessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
