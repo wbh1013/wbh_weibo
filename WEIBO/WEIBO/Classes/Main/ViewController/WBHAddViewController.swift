@@ -1,21 +1,28 @@
 //
-//  WBHDiscoverController.swift
+//  WBHAddViewController.swift
 //  WEIBO
 //
-//  Created by hjy on 2017/11/17.
+//  Created by hjy on 2017/11/20.
 //  Copyright © 2017年 baohong. All rights reserved.
 //
 
 import UIKit
 
-class WBHDiscoverController: WBHBaseController {
+class WBHAddViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.yellow
-        // Do any additional setup after loading the view.
+self.view.backgroundColor = UIColor.white
+        let cancelBtn = UIButton.init(type: UIButtonType.custom)
+        cancelBtn.frame = CGRect(x: 0, y: 0, width: 100, height: 50);
+        cancelBtn.backgroundColor = UIColor.red
+        cancelBtn.addTarget(self, action: #selector(self.dismissVC), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(cancelBtn)
     }
 
+    @objc func dismissVC(){
+        self.dismiss(animated: true, completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

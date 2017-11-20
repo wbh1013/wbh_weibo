@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2001BFEBDACF464F0486FEBC /* Pods_WEIBO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F84DD836CABE5681CCAF72 /* Pods_WEIBO.framework */; };
+		462A17DC1FC262E80099FD00 /* WBHTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A17DB1FC262E80099FD00 /* WBHTabBarButton.swift */; };
+		462A17E01FC2784E0099FD00 /* WBHTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A17DE1FC277390099FD00 /* WBHTools.swift */; };
+		462A17E11FC278510099FD00 /* WBHVariableCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A17DF1FC277390099FD00 /* WBHVariableCustom.swift */; };
+		462A17E31FC2876C0099FD00 /* WBHAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A17E21FC2876C0099FD00 /* WBHAddViewController.swift */; };
 		4680ADE31FBEE0B700E5B1BF /* WBHBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADE21FBEE0B700E5B1BF /* WBHBaseController.swift */; };
 		4680ADE51FBEE14500E5B1BF /* WBHDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADE41FBEE14500E5B1BF /* WBHDiscoverController.swift */; };
 		4680ADE71FBEE15300E5B1BF /* WBHMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADE61FBEE15300E5B1BF /* WBHMeController.swift */; };
@@ -36,6 +40,10 @@
 /* Begin PBXFileReference section */
 		2F72417234644D6DB779DDA0 /* Pods_WEIBOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WEIBOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F84DD836CABE5681CCAF72 /* Pods_WEIBO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WEIBO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		462A17DB1FC262E80099FD00 /* WBHTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHTabBarButton.swift; sourceTree = "<group>"; };
+		462A17DE1FC277390099FD00 /* WBHTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHTools.swift; sourceTree = "<group>"; };
+		462A17DF1FC277390099FD00 /* WBHVariableCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHVariableCustom.swift; sourceTree = "<group>"; };
+		462A17E21FC2876C0099FD00 /* WBHAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHAddViewController.swift; sourceTree = "<group>"; };
 		4680ADD31FBEDCA500E5B1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4680ADE21FBEE0B700E5B1BF /* WBHBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHBaseController.swift; sourceTree = "<group>"; };
 		4680ADE41FBEE14500E5B1BF /* WBHDiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHDiscoverController.swift; sourceTree = "<group>"; };
@@ -89,9 +97,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		462A17DD1FC277390099FD00 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				462A17DE1FC277390099FD00 /* WBHTools.swift */,
+				462A17DF1FC277390099FD00 /* WBHVariableCustom.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		4680ADCC1FBEDCA500E5B1BF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				462A17DD1FC277390099FD00 /* Tools */,
 				4680ADDD1FBEE08600E5B1BF /* Weibo */,
 				4680ADDF1FBEE08600E5B1BF /* Discover */,
 				4680ADE01FBEE08700E5B1BF /* Message */,
@@ -214,6 +232,7 @@
 				C1435C0A1FC1835100618D51 /* AppDelegate.swift */,
 				C1435C0C1FC1835100618D51 /* wbhNavigationController.swift */,
 				C1435C0B1FC1835100618D51 /* WBHTabBarController.swift */,
+				462A17E21FC2876C0099FD00 /* WBHAddViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -222,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				C1435C101FC1862A00618D51 /* WBHTabbarView.swift */,
+				462A17DB1FC262E80099FD00 /* WBHTabBarButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -431,7 +451,11 @@
 				C1435C0D1FC1835100618D51 /* AppDelegate.swift in Sources */,
 				C1435C111FC1862A00618D51 /* WBHTabbarView.swift in Sources */,
 				4680ADE31FBEE0B700E5B1BF /* WBHBaseController.swift in Sources */,
+				462A17E31FC2876C0099FD00 /* WBHAddViewController.swift in Sources */,
+				462A17DC1FC262E80099FD00 /* WBHTabBarButton.swift in Sources */,
+				462A17E11FC278510099FD00 /* WBHVariableCustom.swift in Sources */,
 				4680ADE51FBEE14500E5B1BF /* WBHDiscoverController.swift in Sources */,
+				462A17E01FC2784E0099FD00 /* WBHTools.swift in Sources */,
 				4680ADEB1FBEE17300E5B1BF /* WBHWeiboViewController.swift in Sources */,
 				4680ADE71FBEE15300E5B1BF /* WBHMeController.swift in Sources */,
 				C1435C0F1FC1835100618D51 /* wbhNavigationController.swift in Sources */,
