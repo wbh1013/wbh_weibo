@@ -53,6 +53,8 @@ class WBHOauthController: UIViewController ,UIWebViewDelegate{
                  let account = WBHAccount.initAccountWithDict(accountDict: dictData)
                 WBHAccountTool.saveAccount(Account: account);
                 let account1:WBHAccount = WBHAccountTool.account()
+                
+                
             })
             return false
         }

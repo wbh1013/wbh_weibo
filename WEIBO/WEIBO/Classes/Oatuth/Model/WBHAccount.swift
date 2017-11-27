@@ -40,12 +40,12 @@ class WBHAccount: NSObject ,NSCoding{
     
     required init?(coder aDecoder: NSCoder) {
          super.init()
-        access_token =  aDecoder.decodeObject(forKey: "access_token") as? String
-        expires_in   = aDecoder.decodeObject(forKey: "expires_in") as? String
-        isRealName  = aDecoder.decodeObject(forKey: "isRealName") as? Bool
-        remind_in    = aDecoder.decodeObject(forKey: "remind_in") as? String
-        uid          = aDecoder.decodeObject(forKey: "uid") as? String
-        create_time  = aDecoder.decodeObject(forKey: "create_time") as? NSDate
+        access_token = aDecoder.decodeObject(forKey: "access_token") as? String
+        expires_in   = aDecoder.decodeObject(forKey: "expires_in")   as? String
+        isRealName   = aDecoder.decodeObject(forKey: "isRealName")   as? Bool
+        remind_in    = aDecoder.decodeObject(forKey: "remind_in")    as? String
+        uid          = aDecoder.decodeObject(forKey: "uid")          as? String
+        create_time  = aDecoder.decodeObject(forKey: "create_time")  as? NSDate
    
     
     }

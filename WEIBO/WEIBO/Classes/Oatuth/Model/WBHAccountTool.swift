@@ -27,7 +27,7 @@ class WBHAccountTool: NSObject {
         let nowDate = NSDate.init()
         let result:ComparisonResult  = (exporesTime?.compare(nowDate as Date))!
         
-        if result == ComparisonResult.orderedDescending {
+        if result != ComparisonResult.orderedDescending {
             let account:WBHAccount? = nil
             return  account!
         }else{
