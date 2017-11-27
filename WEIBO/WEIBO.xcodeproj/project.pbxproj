@@ -50,6 +50,7 @@
 		4680ADE61FBEE15300E5B1BF /* WBHMeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHMeController.swift; sourceTree = "<group>"; };
 		4680ADE81FBEE16100E5B1BF /* WBHMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHMessageController.swift; sourceTree = "<group>"; };
 		4680ADEA1FBEE17300E5B1BF /* WBHWeiboViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHWeiboViewController.swift; sourceTree = "<group>"; };
+		46A91AC21FCBB28800C4A276 /* WEIBO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WEIBO-Bridging-Header.h"; sourceTree = "<group>"; };
 		46B48E6B1FBED01000046D9C /* WEIBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WEIBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B48E751FBED01000046D9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46B48E781FBED01000046D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				4680ADD31FBEDCA500E5B1BF /* Info.plist */,
+				46A91AC21FCBB28800C4A276 /* WEIBO-Bridging-Header.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -614,8 +616,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WBH.WEIBO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/WEIBO/Classes/Other/WEIBO-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -632,8 +636,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WBH.WEIBO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/WEIBO/Classes/Other/WEIBO-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

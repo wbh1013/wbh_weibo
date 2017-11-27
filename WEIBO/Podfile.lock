@@ -1,3 +1,15 @@
-PODFILE CHECKSUM: d447b2dacdab28b38bdfdbe98b9934e60cb8f96e
+PODS:
+  - Alamofire (4.5.0)
+  - JZNavigationExtension (1.5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - JZNavigationExtension (= 1.5.0.1)
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  JZNavigationExtension: 7b95d2b1c48846b8bedcb40d767448f14cb9a0b7
+
+PODFILE CHECKSUM: ab46c212e3b8c615cfe291d101ce206dff8aa25c
 
 COCOAPODS: 1.2.1
