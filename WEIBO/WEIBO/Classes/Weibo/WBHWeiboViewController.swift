@@ -6,13 +6,15 @@
 //  Copyright © 2017年 baohong. All rights reserved.
 //
 
-import UIKit
-
+import Alamofire
 class WBHWeiboViewController: WBHBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.red
+
+   
+        
         
     }
 
