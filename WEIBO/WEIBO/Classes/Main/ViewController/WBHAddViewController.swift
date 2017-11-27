@@ -12,7 +12,7 @@ class WBHAddViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.white
         let cancelBtn = UIButton.init(type: UIButtonType.custom)
         cancelBtn.frame = CGRect(x: 0, y: 0, width: 100, height: 50);
         cancelBtn.backgroundColor = UIColor.red
