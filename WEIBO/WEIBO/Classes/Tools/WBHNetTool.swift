@@ -7,13 +7,26 @@
 //
 
 import UIKit
-
-public func postRequest(params _:Dictionary<String,Any>){
-    
-}
+import Alamofire
+//public func postRequest(params _:Dictionary<String,Any>){
+//    
+//}
 
 class WBHNetTool: NSObject {
-//    public func postRequst(params _:Dictionary) -> {
-//        in
-//    }
+    static public func postRequst(withUrl url:String, withParams params:Dictionary<String,Any>) -> Void{
+        Alamofire.request(url, method: HTTPMethod.post, parameters: params, encoding: URLEncoding.default, headers: Alamofire.SessionManager.defaultHTTPHeaders).responseJSON { (responseJson) in
+            
+            if let error = responseJson.error {
+                
+            }else{
+                
+            }
+                
+            
+            
+            
+            
+        }
+        
+    }
 }

@@ -14,7 +14,7 @@ class WBHOauthController: UIViewController ,UIWebViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        
         let webView = UIWebView.init(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
         self.view.addSubview(webView);
         
