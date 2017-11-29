@@ -8,13 +8,13 @@
 
 import UIKit
 import Alamofire
+
 class WBHOauthController: UIViewController ,UIWebViewDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//
-        
+
         let webView = UIWebView.init(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
         self.view.addSubview(webView);
         
@@ -30,7 +30,7 @@ class WBHOauthController: UIViewController ,UIWebViewDelegate{
 
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         let urlStr = request.url?.absoluteString
-      
+        print("urlStr---\(String(describing: urlStr))");
         let range = urlStr?.range(of: "code=")
         if range != nil {
             let nsrange = urlStr?.nsRange(from: range!)
@@ -50,9 +50,9 @@ class WBHOauthController: UIViewController ,UIWebViewDelegate{
             Alamofire.request("https://api.weibo.com/oauth2/access_token", method: .post, parameters: params, encoding: URLEncoding.default, headers:  Alamofire.SessionManager.defaultHTTPHeaders).responseJSON(completionHandler: { (responeData) in
                 let dictData  = responeData.value as! NSDictionary
                
-                 let account = WBHAccount.initAccountWithDict(accountDict: dictData)
+                 let account = WBHAccount.initAccountWithDict(accountDict: dictData as! Dictionary<String,Any>)
                 WBHAccountTool.saveAccount(Account: account);
-                let account1:WBHAccount = WBHAccountTool.account()
+                UIApplication.shared.keyWindow?.rootViewController = WBHTabBarController()
                 
                 
             })

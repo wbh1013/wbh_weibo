@@ -12,6 +12,7 @@
 		462A17E01FC2784E0099FD00 /* WBHTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A17DE1FC277390099FD00 /* WBHTools.swift */; };
 		462A17E11FC278510099FD00 /* WBHVariableCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A17DF1FC277390099FD00 /* WBHVariableCustom.swift */; };
 		462A17E31FC2876C0099FD00 /* WBHAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462A17E21FC2876C0099FD00 /* WBHAddViewController.swift */; };
+		4636FECF1FCE9027001F46E7 /* WBHNetTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4636FECE1FCE9027001F46E7 /* WBHNetTool.swift */; };
 		4680ADE31FBEE0B700E5B1BF /* WBHBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADE21FBEE0B700E5B1BF /* WBHBaseController.swift */; };
 		4680ADE51FBEE14500E5B1BF /* WBHDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADE41FBEE14500E5B1BF /* WBHDiscoverController.swift */; };
 		4680ADE71FBEE15300E5B1BF /* WBHMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4680ADE61FBEE15300E5B1BF /* WBHMeController.swift */; };
@@ -47,6 +48,7 @@
 		462A17DE1FC277390099FD00 /* WBHTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHTools.swift; sourceTree = "<group>"; };
 		462A17DF1FC277390099FD00 /* WBHVariableCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHVariableCustom.swift; sourceTree = "<group>"; };
 		462A17E21FC2876C0099FD00 /* WBHAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHAddViewController.swift; sourceTree = "<group>"; };
+		4636FECE1FCE9027001F46E7 /* WBHNetTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHNetTool.swift; sourceTree = "<group>"; };
 		4680ADD31FBEDCA500E5B1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4680ADE21FBEE0B700E5B1BF /* WBHBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHBaseController.swift; sourceTree = "<group>"; };
 		4680ADE41FBEE14500E5B1BF /* WBHDiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBHDiscoverController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				462A17DE1FC277390099FD00 /* WBHTools.swift */,
 				462A17DF1FC277390099FD00 /* WBHVariableCustom.swift */,
+				4636FECE1FCE9027001F46E7 /* WBHNetTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				C1435C0F1FC1835100618D51 /* wbhNavigationController.swift in Sources */,
 				C1435C0E1FC1835100618D51 /* WBHTabBarController.swift in Sources */,
 				4680ADE91FBEE16100E5B1BF /* WBHMessageController.swift in Sources */,
+				4636FECF1FCE9027001F46E7 /* WBHNetTool.swift in Sources */,
 				46A91AC91FCBF9AE00C4A276 /* WBHOauthController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

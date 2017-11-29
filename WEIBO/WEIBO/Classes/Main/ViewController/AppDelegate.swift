@@ -18,7 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        self.window?.rootViewController = WBHTabBarController()
+        let account =   WBHAccountTool.account()
+        if  account.access_token?.count == 0 {
+            self.window?.rootViewController = WBHOauthController()
+        }else{
+            self.window?.rootViewController = WBHTabBarController()
+        }
+        
         self.window?.makeKeyAndVisible()
         return true
     }

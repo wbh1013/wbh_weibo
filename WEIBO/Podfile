@@ -12,5 +12,6 @@ target 'WEIBO' do
     # Pods for testing
   end
   pod 'Alamofire', '~> 4.5'
-  pod 'JZNavigationExtension',      '1.5.0.1'   #源码下载地址:https://github.com/JazysYu/JZNavigationExtension.git
+  pod 'JZNavigationExtension',       '1.5.0.1'     #源码下载地址:https://github.com/JazysYu/JZNavigationExtension.git
+#  pod 'HandyJSON'  ,                 '4.0.0-beta.1'       #源码下载地址:https://github.com/alibaba/handyjson
 end

@@ -27,7 +27,7 @@ class WBHTabBarController: UITabBarController ,WBHTabbarViewDelegate {
 // MARK - 添加控制器
     private func addChildViewControllers(){
         //微博
-        self.addVC(viewController: WBHOauthController())
+        self.addVC(viewController: WBHWeiboViewController())
         //消息
         self.addVC(viewController: WBHMessageController())
         //发现
