@@ -8,7 +8,8 @@
 
 import UIKit
 
-
+//baseUrl
+let BaseUrl = ""
 
 // 屏幕宽高
 let screenWidth   = UIScreen.main.bounds.size.width
