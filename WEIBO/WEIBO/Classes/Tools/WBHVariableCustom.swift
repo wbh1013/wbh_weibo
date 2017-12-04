@@ -9,7 +9,7 @@
 import UIKit
 
 //baseUrl
-let BaseUrl = ""
+let BaseUrl = "https://api.weibo.com/"
 
 // 屏幕宽高
 let screenWidth   = UIScreen.main.bounds.size.width

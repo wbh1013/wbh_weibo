@@ -14,7 +14,6 @@ class WBHOauthController: UIViewController ,UIWebViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         let webView = UIWebView.init(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
         self.view.addSubview(webView);
         
@@ -37,8 +36,7 @@ class WBHOauthController: UIViewController ,UIWebViewDelegate{
             let  fromIndex:Int = (nsrange?.length)! + (nsrange?.location)!
             let code = (urlStr! as NSString).substring(from: fromIndex)
             print(code)
-            //  App Key：1243717140
-            //App Secret：a3b2a736c17058717d537ac9e8fc8dbd
+ 
             let params = [
                 "client_id":"1243717140",
                 "client_secret":"a3b2a736c17058717d537ac9e8fc8dbd",
@@ -47,13 +45,16 @@ class WBHOauthController: UIViewController ,UIWebViewDelegate{
                 "redirect_uri":"http://www.baidu.com"
             ]
             
-            Alamofire.request("https://api.weibo.com/oauth2/access_token", method: .post, parameters: params, encoding: URLEncoding.default, headers:  Alamofire.SessionManager.defaultHTTPHeaders).responseJSON(completionHandler: { (responeData) in
+         //拿到code进行请求 获取access_token
+            WBHNetTool.POSTRequest(withUrl: "oauth2/access_token", withParams: params, success: { (responeData) in
                 let dictData  = responeData.value as! NSDictionary
-               
-                 let account = WBHAccount.initAccountWithDict(accountDict: dictData as! Dictionary<String,Any>)
-                WBHAccountTool.saveAccount(Account: account);
-                UIApplication.shared.keyWindow?.rootViewController = WBHTabBarController()
                 
+                let account = WBHAccount.initAccountWithDict(accountDict: dictData as! Dictionary<String,Any>)
+                //归档
+                WBHAccountTool.saveAccount(Account: account);
+                //重新设置rootViewController
+                UIApplication.shared.keyWindow?.rootViewController = WBHTabBarController()
+            }, failure: { (error) in
                 
             })
             return false

@@ -8,25 +8,34 @@
 
 import UIKit
 import Alamofire
-//public func postRequest(params _:Dictionary<String,Any>){
-//    
-//}
+
+typealias Success = (DataResponse<Any>)    -> Void
+typealias Failure = (NSError) -> Void
 
 class WBHNetTool: NSObject {
-    static public func postRequst(withUrl url:String, withParams params:Dictionary<String,Any>) -> Void{
-        Alamofire.request(url, method: HTTPMethod.post, parameters: params, encoding: URLEncoding.default, headers: Alamofire.SessionManager.defaultHTTPHeaders).responseJSON { (responseJson) in
-            
+    
+//MARK - get请求
+    static public func getRequst(withUrl url:String, withParams params:Dictionary<String,Any>, success susse: @escaping Success, failure fail: @escaping Failure) -> Void{
+
+        let allUrl = BaseUrl + url
+        Alamofire.request(allUrl, method: HTTPMethod.get, parameters: params, encoding: URLEncoding.default, headers: Alamofire.SessionManager.defaultHTTPHeaders).responseJSON { (responseJson) in
             if let error = responseJson.error {
-                
+                fail(error as NSError)
             }else{
-                
+                susse(responseJson)
             }
-                
-            
-            
-            
-            
         }
-        
+    }
+    
+//MARK - POST请求
+    static public func POSTRequest(withUrl url:String, withParams params:Dictionary<String,Any>, success susse: @escaping Success, failure fail: @escaping Failure) -> Void{
+        let allUrl = BaseUrl + url
+        Alamofire.request(allUrl, method: .post, parameters: params, encoding:URLEncoding.default, headers: Alamofire.SessionManager.defaultHTTPHeaders).responseJSON { (responseJson) in
+            if let error = responseJson.error {
+                fail(error as NSError)
+            }else{
+                susse(responseJson)
+            }
+        }
     }
 }
