@@ -14,7 +14,8 @@ class WBHWeiboViewController: WBHBaseController {
         self.view.backgroundColor = UIColor.red
         let account = WBHAccountTool.account();
         let params:Dictionary<String,Any> = [
-            "access_token":account.access_token ?? ""
+            "access_token":account.access_token ?? "",
+            "count":4
         ]
         print("参数： \(params)")
         WBHNetTool.getRequst(withUrl: "2/statuses/public_timeline.json", withParams: params , success: { (obj) in

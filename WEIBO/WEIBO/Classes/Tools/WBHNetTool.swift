@@ -18,6 +18,7 @@ class WBHNetTool: NSObject {
     static public func getRequst(withUrl url:String, withParams params:Dictionary<String,Any>, success susse: @escaping Success, failure fail: @escaping Failure) -> Void{
 
         let allUrl = BaseUrl + url
+        print("allUrl---- : \(allUrl)")
         Alamofire.request(allUrl, method: HTTPMethod.get, parameters: params, encoding: URLEncoding.default, headers: Alamofire.SessionManager.defaultHTTPHeaders).responseJSON { (responseJson) in
             if let error = responseJson.error {
                 fail(error as NSError)
@@ -30,6 +31,7 @@ class WBHNetTool: NSObject {
 //MARK - POST请求
     static public func POSTRequest(withUrl url:String, withParams params:Dictionary<String,Any>, success susse: @escaping Success, failure fail: @escaping Failure) -> Void{
         let allUrl = BaseUrl + url
+         print("allUrl---- : \(allUrl)")
         Alamofire.request(allUrl, method: .post, parameters: params, encoding:URLEncoding.default, headers: Alamofire.SessionManager.defaultHTTPHeaders).responseJSON { (responseJson) in
             if let error = responseJson.error {
                 fail(error as NSError)
